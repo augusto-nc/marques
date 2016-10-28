@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="br.com.daniel.marques.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:id="@+id/frame_user"
+            >
+            <ImageView
+                android:id="@+id/bt_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_account_circle_black_24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:id="@+id/frame_novo_evento"
+            >
+            <ImageView
+                android:id="@+id/bt_novo_evento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_add_circle_black_24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:id="@+id/frame_list_eventos"
+            >
+            <ImageView
+                android:id="@+id/bt_list_eventos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_list_black_24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+        </FrameLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/holder"
+        android:layout_toEndOf="@+id/linearLayout">
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
